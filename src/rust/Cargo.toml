@@ -10,18 +10,18 @@ name = "rust_stellar_core"
 crate-type = ["staticlib"]
 
 [dependencies]
-log = "=0.4.19"
-tracy-client = { version = "=0.16.4", features = ["enable"], default-features = false, optional = true}
-cxx = "=1.0.97"
-base64 = "=0.13.1"
-rustc-simple-version = "=0.1.0"
+log = "=0.4.22"
+tracy-client = { version = "=0.17.3", features = ["enable"], default-features = false, optional = true}
+cxx = "=1.0.112"
+base64 = "=0.22.1"
+rustc-simple-version = "=0.1.1"
 # NB: this must match the same rand version used by soroban (but the tooling
 # will complain if it does not match)
 rand = "=0.8.5"
 
-petgraph = "=0.6.4"
-toml = "=0.7.8"
-itertools = "=0.11.0"
+petgraph = "=0.6.5"
+toml = "=0.8.8"
+itertools = "=0.13.0"
 
 # This copy of the soroban host is always enabled, and should always point to a
 # version that supports stellar-core's Config::CURRENT_LEDGER_PROTOCOL_VERSION.
